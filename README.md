@@ -1,17 +1,14 @@
 # Yash-Walhekar-Cyber-Task-4
 
+# Elevate Labs - Cybersecurity Internship: Task 4
 ## Setup and Use a Firewall on Windows
 
 This repository contains the deliverables for Task 4 of the Cybersecurity Internship program. The objective of this task was to configure and test a basic Windows Firewall rule to block specific network traffic.
-
----
 
 ### Tool Used
 
 * **Platform:** Windows
 * **Tool:** Windows Defender Firewall with Advanced Security
-
----
 
 ### Summary: How a Firewall Filters Traffic
 
@@ -23,34 +20,43 @@ It works by inspecting data packets and deciding whether to allow or block them 
 
 ### Process and Steps Performed
 
-To complete this task, I used the "New Inbound Rule Wizard" in Windows Defender Firewall. The exact steps are documented in the screenshots provided in this repository.
+To complete this task, I used the "New Inbound Rule Wizard" in Windows Defender Firewall. The entire process is documented in the screenshots below.
 
-1.  **Start:** Opened **Windows Defender Firewall with Advanced Security** and selected **Inbound Rules** (as seen in `Step 1.jpg`).
-2.  **New Rule:** Clicked **New Rule...** from the "Actions" pane (as seen in `Step 2.jpg`).
-3.  **Rule Type:** (Inferred) Selected the **Port** rule type.
-4.  **Protocol and Ports:** Specified the rule to apply to **TCP** and **Specific local ports: 23** (as seen in `Step 3.png`).
-5.  **Action:** Chose the **Block the connection** action (as seen in `Step 4.png`).
-6.  **Profile:** Applied the rule to all three network profiles: **Domain, Private, and Public** (as seen in `Step 5.png`).
-7.  **Name:** Named the rule **"Internship Task 4(Test Rule)"** to complete the wizard (as seen in `Step 6.png`).
-8.  **Test:** Opened PowerShell and ran `Test-NetConnection -ComputerName 127.0.0.1 -Port 23` to test the rule.
-9.  **Result:** The test **failed** (`TcpTestSucceeded : False`), confirming that the firewall is successfully blocking inbound connections on port 23 (as seen in `Step 7.png`).
-10. **Cleanup:** (After testing) The "Internship Task 4(Test Rule)" was deleted to restore the system to its original state.
+1.  **Start:** Opened **Windows Defender Firewall with Advanced Security** and selected **Inbound Rules**. (See: `Step 1.jpg`)
+2.  **New Rule:** Clicked **New Rule...** from the "Actions" pane to start the wizard. (See: `Step 2.jpg`)
+3.  **Protocol and Ports:** Specified the rule to apply to **TCP** and **Specific local ports: 23**. (See: `Step 3.png`)
+4.  **Action:** Chose the **Block the connection** action. (See: `Step 4.png`)
+5.  **Profile:** Applied the rule to all three network profiles: **Domain, Private, and Public**. (See: `Step 5.png`)
+6.  **Name:** Named the rule **"Internship Task 4(Test Rule)"** to complete the wizard. (See: `Step 6.png`)
+7.  **Test:** Opened PowerShell and ran `Test-NetConnection -ComputerName 127.0.0.1 -Port 23` to test the rule. The test **failed** (`TcpTestSucceeded : False`), confirming the block was active. (See: `Step 7.png`)
+8.  **Cleanup:** After testing, the "Internship Task 4(Test Rule)" was deleted to restore the system to its original state.
 
 ---
 
-### Deliverables: Screenshots
+### Deliverables: All Step Screenshots
 
-The following screenshots document the key steps of the process: creating the rule and testing it.
+Here are all 7 screenshots documenting the process from start to finish.
 
-#### Screenshot 1: Final Step of Rule Creation
-*(This image shows the name given to the rule just before it was created.)*
+**Step 1: Open Inbound Rules**
+![Open Inbound Rules](Step%201.jpg)
 
-![Final Step of Rule Creation](Step%206.png)
+**Step 2: Create New Rule**
+![Create New Rule](Step%202.jpg)
 
-#### Screenshot 2: Test Result
-*(This image shows the PowerShell output. `TcpTestSucceeded : False` proves the port is successfully blocked.)*
+**Step 3: Specify Protocol and Port**
+![Specify Protocol and Port](Step.png)
 
-![Test Result](Step%207.png)
+**Step 4: Specify Action (Block)**
+![Specify Action](Step%204.png)
+
+**Step 5: Specify Profile**
+![Specify Profile](Step%205.png)
+
+**Step 6: Name the Rule**
+![Name the Rule](Step%206.png)
+
+**Step 7: Test the Rule (PowerShell)**
+![Test the Rule](Step%207.png)
 
 ---
 
