@@ -44,7 +44,7 @@ Here are all 7 screenshots documenting the process from start to finish.
 ![Create New Rule](Step%202.png)
 
 **Step 3: Specify Protocol and Port**
-![Specify Protocol and Port](Step.png)
+![Specify Protocol and Port](Step%203.png)
 
 **Step 4: Specify Action (Block)**
 ![Specify Action](Step%204.png)
