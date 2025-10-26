@@ -1,26 +1,23 @@
 # Yash-Walhekar-Cyber-Task-4
 
-# Elevate Labs - Cybersecurity Internship: Task 4
 ## Setup and Use a Firewall on Windows
 
-This repository contains the deliverables for Task 4 of the Cybersecurity Internship program. The objective of this task was to configure and test a basic Windows Firewall rule to block specific network traffic.
+This repository will hold the deliverables of the Task 4 of Cybersecurity Internship program. This task had the intention of configuring and testing a simple windows firewall rule to limit a certain network traffic.
 
 ### Tool Used
 
 * **Platform:** Windows
-* **Tool:** Windows Defender Firewall with Advanced Security
+* **Hardware/software:** Windows Defender Firewall with Advanced Security.
 
 ### Summary: How a Firewall Filters Traffic
 
-A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on a set of predefined security rules. It acts as a filter between a trusted internal network (my computer) and untrusted external networks (the internet).
+A firewall is a network defense system that will observe and control the traffic that moves within a network and that which exits it without disobedience to a collection of established security rules. It serves as a blocker between a set of trusted internal network (my computer) and the non-trusted external networks (the internet).
 
-It works by inspecting data packets and deciding whether to allow or block them based on rules that check for IP addresses, ports (like port 23), and protocols (like TCP).
-
----
+It operates on the principle of examining data packets and either permitting or rejecting them depending on rules that examine such data packets against IP address, ports (such as port 23), and protocols (such as TCP).
 
 ### Process and Steps Performed
 
-To complete this task, I used the "New Inbound Rule Wizard" in Windows Defender Firewall. The entire process is documented in the screenshots below.
+In order to accomplish this task, I applied the New Inbound Rule wizard of windows defender firewall. The whole procedure is recorded in the following screen shots.
 
 1.  **Start:** Opened **Windows Defender Firewall with Advanced Security** and selected **Inbound Rules**. (See: `Step 1.jpg`)
 2.  **New Rule:** Clicked **New Rule...** from the "Actions" pane to start the wizard. (See: `Step 2.jpg`)
@@ -30,8 +27,6 @@ To complete this task, I used the "New Inbound Rule Wizard" in Windows Defender 
 6.  **Name:** Named the rule **"Internship Task 4(Test Rule)"** to complete the wizard. (See: `Step 6.png`)
 7.  **Test:** Opened PowerShell and ran `Test-NetConnection -ComputerName 127.0.0.1 -Port 23` to test the rule. The test **failed** (`TcpTestSucceeded : False`), confirming the block was active. (See: `Step 7.png`)
 8.  **Cleanup:** After testing, the "Internship Task 4(Test Rule)" was deleted to restore the system to its original state.
-
----
 
 ### Deliverables: All Step Screenshots
 
@@ -58,8 +53,6 @@ Here are all 7 screenshots documenting the process from start to finish.
 **Step 7: Test the Rule (PowerShell)**
 ![Test the Rule](Step%207.png)
 
----
-
 ### Task Outcome
 
-This task provided hands-on experience in configuring and verifying a firewall rule on Windows. It demonstrated how to block a specific port (port 23) to enhance system security by preventing insecure protocols like Telnet.
+This assignment helped to get more practical experience on how to configure and test a windows firewall rule. It showed how it was possible to block a certain port (port 23) to improve the security of the system by blocking dangerous protocols, such as Telnet.
