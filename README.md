@@ -38,10 +38,10 @@ To complete this task, I used the "New Inbound Rule Wizard" in Windows Defender 
 Here are all 7 screenshots documenting the process from start to finish.
 
 **Step 1: Open Inbound Rules**
-![Open Inbound Rules](Step%201.jpg)
+![Open Inbound Rules](Step%201.png)
 
 **Step 2: Create New Rule**
-![Create New Rule](Step%202.jpg)
+![Create New Rule](Step%202.png)
 
 **Step 3: Specify Protocol and Port**
 ![Specify Protocol and Port](Step.png)
